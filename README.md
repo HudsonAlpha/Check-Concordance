@@ -14,7 +14,7 @@ This pipeline is designed to check the concordance between imputed arrays and wh
 Ensure that all required software (bcftools, htslib, Java, and R) is installed on your system. The script also uses specific SLURM commands for job scheduling, so SLURM needs to be available in your cluster environment.
 
 ## Usage
-Run the script with two VCF files (array and genome) as arguments. Both files should be compressed (`.vcf.gz`), indexed, and should not contain periods in their filenames except for the file extension, this will affect the output naming for the SnpSift output files.
+Run the script with two VCF files (array and genome) as arguments. Both files should be compressed (`.vcf.gz`), indexed, and should not contain periods in their filenames except for the file extension, this will affect the naming for the SnpSift output files.
 
 ```bash
 ./vcf_concordance_analysis.sh <array_vcf>.vcf.gz <genome_vcf>.vcf.gz
